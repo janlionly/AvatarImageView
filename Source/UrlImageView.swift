@@ -18,12 +18,12 @@ extension UIColor {
 open class UrlImageView: UIImageView {
     private let indicatorTag: Int = 487292739
     
-    @IBInspectable @objc open var isRound: Bool = false {
+    @objc open var isRound: Bool = false {
         didSet {
             updateRadius()
         }
     }
-    @IBInspectable @objc open var defaultImage: UIImage? = nil
+    @objc open var defaultImage: UIImage? = nil
     
     @objc open var indicatorColor: UIColor = UIColor.clear {
         didSet {
